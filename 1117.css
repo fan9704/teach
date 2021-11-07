@@ -1,0 +1,22 @@
+ol {
+    list-style: decimal-leading-zero;
+}
+
+.Google_form {
+    background-color: #fff;
+    border: solid black 3px;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.container {
+    background-color: black;
+    padding: 20px;
+}
+
+.Google_form:hover {
+    background-color: #aaa;
+    color: white;
+}
