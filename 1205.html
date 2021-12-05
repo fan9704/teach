@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="myFunction()">換成文字</button>
+    <p class="test">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas laboriosam ex reiciendis unde aperiam non similique aliquid amet tempora vitae veniam saepe autem eos, fuga velit quae pariatur corporis excepturi. Ab voluptates tempora a maiores
+        quae facilis perspiciatis rerum impedit debitis soluta repellendus ex esse sunt, quisquam, laudantium sapiente cupiditate ipsa corporis. Distinctio veniam repudiandae natus omnis libero consectetur vero. Ullam beatae odio blanditiis cupiditate
+        eaque assumenda soluta quos quibusdam quaerat adipisci! Et sapiente tempore modi magnam fugit rem eius, ab, magni nihil nam omnis dicta iure incidunt quia beatae! Eaque perspiciatis ipsam quia, quam nulla id provident est possimus optio alias
+        fuga minima eum explicabo dolores, labore veniam quos nisi laboriosam sequi quisquam! Aperiam quo sequi optio debitis sunt? Non suscipit, quisquam laudantium quia unde assumenda esse et inventore perferendis atque amet ipsa iste earum, dolor accusantium
+        iure! Minus distinctio libero rerum perspiciatis dignissimos voluptatum impedit accusamus voluptatem placeat? Voluptates officia magni quas sapiente natus numquam voluptatum odit, pariatur doloremque dolores qui ex animi itaque voluptatem odio
+        deleniti necessitatibus doloribus expedita omnis distinctio impedit ipsa esse suscipit nobis. Accusantium. Amet quis eligendi excepturi ut! Ex aperiam aut inventore obcaecati facilis itaque tenetur sequi ducimus? Quam a molestias voluptates? Facere
+
+    </p>
+
+
+    <script>
+        var open = false;
+        // const PI = 3.141592653589793;
+        // console.log(PI);
+
+
+        function myFunction() {
+            // 按鈕的函式
+            let test = document.querySelector(".test");
+            if (open) {
+                test.innerHTML = "我加了一些中文";
+                test.style.color = "red";
+                test.style.background = "pink";
+            } else {
+                test.innerHTML = "我加了一些法文";
+                test.style.color = "green";
+                test.style.background = "black";
+            }
+            console.log(open);
+            open = !open;
+
+        }
+        let ary = ["元素1", "元素2", "元素3"];
+        console.log(ary);
+        console.log(...ary);
+        console.log(ary.length);
+        var text = "<ul>"
+        for (let i = 0; i < ary.length; i++) {
+            text += "<li>" + ary[i] + "</li>"
+        }
+        text += "</ul>"
+        let test = document.querySelector(".test");
+        test.innerHTML = text;
+    </script>
+</body>
+
+</html>

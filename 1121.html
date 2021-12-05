@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="">N1</label>
+    <input type="text" class="n1" value="123"><br>
+    <label for="">N2</label>
+    <input type="text" class="n2" value="456"><br>
+    <button onclick="add">PLUS</button>
+
+    <script>
+        var n1 = parseInt(document.querySelector('input.n1').value);
+        var n2 = parseInt(document.querySelector('input.n2').value);
+        let a = 1;
+        let b = 2;
+
+        //宣告function  遞迴
+        function level(sum, n) {
+            if (n == 1) {
+                return sum;
+            } else {
+                return n * level(sum, n - 1);
+            }
+        }
+        //印出結果
+        //用三個參數
+        console.log(5 * 4 * 3 * 2 * 1);
+        console.log(level(1, 5));
+    </script>
+</body>
+
+</html>
