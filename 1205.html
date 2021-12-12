@@ -46,6 +46,18 @@
         console.log(ary);
         console.log(...ary);
         console.log(ary.length);
+        ary.push("元素4"); //加入陣列尾吧
+        console.log(ary);
+        ary.pop(); //刪除最尾端的元素
+        console.log(ary);
+        ary.shift(); //前面的元素刪除
+        console.log(ary);
+        ary.unshift("元素0"); //加入元素至陣列的頭
+        console.log(ary);
+        ary.reverse(); //反轉陣列
+        console.log(ary);
+        ary.splice(1, 2); //反轉陣列
+        console.log(ary);
         var text = "<ul>"
         for (let i = 0; i < ary.length; i++) {
             text += "<li>" + ary[i] + "</li>"
@@ -53,6 +65,45 @@
         text += "</ul>"
         let test = document.querySelector(".test");
         test.innerHTML = text;
+
+        let superHeros = {
+            "squadName": "Super hero squad",
+            "homeTown": "Metro City",
+            "formed": 2016,
+            "secretBase": "Super tower",
+            "active": true,
+            "members": [{
+                "name": "Molecule Man",
+                "age": 29,
+                "secretIdentity": "Dan Jukes",
+                "powers": [
+                    "Radiation resistance",
+                    "Turning tiny",
+                    "Radiation blast"
+                ]
+            }, {
+                "name": "Madame Uppercut",
+                "age": 39,
+                "secretIdentity": "Jane Wilson",
+                "powers": [
+                    "Million tonne punch",
+                    "Damage resistance",
+                    "Superhuman reflexes"
+                ]
+            }, {
+                "name": "Eternal Flame",
+                "age": 1000000,
+                "secretIdentity": "Unknown",
+                "powers": [
+                    "Immortality",
+                    "Heat Immunity",
+                    "Inferno",
+                    "Teleportation",
+                    "Interdimensional travel"
+                ]
+            }]
+        }
+        console.log(superHeros.homeTown); //dot notation
     </script>
 </body>
 
