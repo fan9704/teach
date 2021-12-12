@@ -18,21 +18,22 @@
 <body>
     <nav class="navbar">
 
-        <div class="nav-item home">Home</div>
+        <div class="nav-item home btn btn-success">Home</div>
         <div class="nav-item">Privacy</div>
         <div class="nav-item">Option</div>
         <div class="nav-item">Login</div>
     </nav>
-    <div class="dropdown-menu">
-        Hello World
+    <div class="a" style="display: inline-block;">AAAA
+    </div>
+    <div class="a" style="display: none;"> HHHHHHHH
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script>
         $('.home').click(function() {
-            $('.dropdown-menu').animate({
-                height: "toggle",
-                opacity: "toggle"
-            }, 300);
+            $('.a').animate({
+                height: "toggle"
+
+            }, 200);
         });
     </script>
 </body>
